@@ -1,0 +1,10 @@
+Flask
+requests
+python-dotenv
+beautifulsoup4
+lxml
+transformers
+torch
+sentence-transformers
+scikit-learn
+numpy

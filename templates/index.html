@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        NewsLens - AI News Analyzer
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for(
+            'static',
+            filename='style.css'
+        ) }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>
+            NewsLens
+        </h1>
+
+        <p>
+            AI News Summarizer & Bias Analyzer
+        </p>
+
+    </header>
+
+
+    <section class="search-box">
+
+        <input
+            type="text"
+            id="query"
+            placeholder="Enter a news topic..."
+        >
+
+        <button
+            onclick="analyzeNews()"
+        >
+            Analyze News
+        </button>
+
+    </section>
+
+
+    <div
+        id="loading"
+        class="loading"
+    >
+        Analyzing news...
+    </div>
+
+
+    <section id="results"></section>
+
+</div>
+
+
+<script
+    src="{{ url_for(
+        'static',
+        filename='script.js'
+    ) }}"
+></script>
+
+
+</body>
+
+</html>
